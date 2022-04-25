@@ -101,7 +101,7 @@ void main() {
       expect(usd, equals(Price(0.75, CurrencyCode.USD)));
     });
 
-    test('Can be formatted', () {
+    test('Can be formatted locally', () {
       final price = Price(2000.50, CurrencyCode.EUR);
       final formatterEn = NumberFormat.currency(
         locale: 'en',
@@ -120,6 +120,17 @@ void main() {
               // remove space unicode character for easier testing
               .replaceAll(RegExp('\\s'), ''),
           equals('2000,50€'));
+    });
+
+    test('Can be generated from a locale string', () {
+      final price = Price(2000.50, CurrencyCode.EUR);
+      final formatterEn = NumberFormat.currency(
+        locale: 'en',
+        name: price.currency.code.name,
+        symbol: price.currency.symbol,
+      );
+      final value = formatterEn.parse('€2,000.50');
+      expect(Price(value.toDouble(), CurrencyCode.EUR), equals(price));
     });
   });
 }
