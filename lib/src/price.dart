@@ -27,7 +27,7 @@ class Price implements Comparable<Price> {
 
   bool get isNegative => amount < Decimal.zero;
 
-  /// Two prices are equal if their cents and currency are the same
+  /// Two prices are equal if their amount and currency are the same
   @override
   bool operator ==(Object other) {
     if (identical(this, other)) return true;
