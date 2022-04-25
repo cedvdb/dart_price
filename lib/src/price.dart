@@ -2,24 +2,26 @@ import 'dart:convert';
 
 import 'package:decimal/decimal.dart';
 
+import 'currency.dart';
 import 'currency_code.enum.dart';
 
 class Price implements Comparable<Price> {
   final Decimal amount;
 
-  final CurrencyCode currency;
+  final Currency currency;
 
-  const Price(this.amount, this.currency);
+  const Price._(this.amount, this.currency);
 
-  Price.fromInt(int amount, this.currency) : amount = Decimal.fromInt(amount);
+  Price(double amount, CurrencyCode currencyCode)
+      : amount = Decimal.parse(amount.toString()),
+        currency = Currency.fromCode(currencyCode);
 
-  Price.fromDouble(double amount, this.currency)
-      : amount = Decimal.parse(amount.toString());
+  Price abs() => Price._(amount.abs(), currency);
 
-  Price abs() => Price(amount.abs(), currency);
-
-  Price converted(CurrencyCode currencyCode, double rate) =>
-      Price(amount * Decimal.parse(rate.toString()), currencyCode);
+  Price converted(CurrencyCode currencyCode, double rate) => Price._(
+        amount * Decimal.parse(rate.toString()),
+        Currency.fromCode(currencyCode),
+      );
 
   bool get isZero => amount == Decimal.zero;
 
@@ -86,7 +88,7 @@ class Price implements Comparable<Price> {
     if (currency != other.currency) {
       _throwCurrencyError();
     }
-    return Price(amount + other.amount, currency);
+    return Price._(amount + other.amount, currency);
   }
 
   /// Subtracts amount of the second [Price] operand and creates new instance.
@@ -97,16 +99,16 @@ class Price implements Comparable<Price> {
       _throwCurrencyError();
     }
 
-    return Price(amount - other.amount, currency);
+    return Price._(amount - other.amount, currency);
   }
 
   Price operator *(double scalor) {
-    return Price(amount * Decimal.parse(scalor.toString()), currency);
+    return Price._(amount * Decimal.parse(scalor.toString()), currency);
   }
 
   Price operator /(double scalor) {
     final result = amount / Decimal.parse(scalor.toString());
-    return Price(result.toDecimal(), currency);
+    return Price._(result.toDecimal(), currency);
   }
 
   @override
@@ -126,14 +128,14 @@ class Price implements Comparable<Price> {
   Map<String, dynamic> toMap() {
     return {
       'amount': amount.toJson(),
-      'currency': currency.name,
+      'currency': currency.toJson(),
     };
   }
 
   factory Price.fromMap(Map<String, dynamic> map) {
-    return Price(
+    return Price._(
       Decimal.fromJson(map['amount']),
-      CurrencyCode.values.byName(map['currency']),
+      Currency.fromJson(map['currency']),
     );
   }
 
