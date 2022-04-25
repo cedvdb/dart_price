@@ -1,4 +1,4 @@
-Library to deal with money.
+Money library that takes care of dealing with double imprecision.
 
 
 # Usage
@@ -10,10 +10,6 @@ import 'package:intl/intl.dart';
 void main() {
   final price = Price(1.2, CurrencyCode.EUR);
   final price2 = Price(1.1, CurrencyCode.EUR);
-
-  print('format:');
-  print(buildEnglishFormatter(price).format(price.amount.toDouble()));
-  print(buildFrenchFormatter(price).format(price.amount.toDouble()));
   print('add:');
   print(price + price2);
   print('substract:');
@@ -26,23 +22,14 @@ void main() {
   print(price.converted(CurrencyCode.USD, 1.1));
   print('sort:');
   print([price, price2]..sort());
-}
 
-/// the formatters are from the intl library but prices work well with it.
-NumberFormat buildFrenchFormatter(Price price) {
-  return NumberFormat.currency(
+  print('format:');
+  final formatter = NumberFormat.currency(
     locale: 'fr',
     name: price.currency.code.name,
     symbol: price.currency.symbol,
   );
-}
-
-NumberFormat buildEnglishFormatter(Price price) {
-  return NumberFormat.currency(
-    locale: 'en',
-    name: price.currency.code.name,
-    symbol: price.currency.symbol,
-  );
+  print(formatter.format(price.amount.toDouble()));
 }
 
 ```
