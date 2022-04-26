@@ -1,1099 +1,1099 @@
 part of 'currency.dart';
 
-final currencyMap = {
-  CurrencyCode.AED: const Currency._(
+const currencyMap = {
+  CurrencyCode.AED: Currency._(
     name: 'Emirati Dirham',
     code: CurrencyCode.AED,
     number: 784,
     digits: 2,
     symbol: r'د.إ',
   ),
-  CurrencyCode.AFN: const Currency._(
+  CurrencyCode.AFN: Currency._(
     name: 'Afghan Afghani',
     code: CurrencyCode.AFN,
     number: 971,
     digits: 2,
     symbol: r'؋',
   ),
-  CurrencyCode.ALL: const Currency._(
+  CurrencyCode.ALL: Currency._(
     name: 'Albanian Lek',
     code: CurrencyCode.ALL,
     number: 8,
     digits: 2,
     symbol: r'L',
   ),
-  CurrencyCode.AMD: const Currency._(
+  CurrencyCode.AMD: Currency._(
     name: 'Armenian Dram',
     code: CurrencyCode.AMD,
     number: 51,
     digits: 2,
     symbol: r'դր.',
   ),
-  CurrencyCode.ANG: const Currency._(
+  CurrencyCode.ANG: Currency._(
     name: 'Dutch Guilder',
     code: CurrencyCode.ANG,
     number: 532,
     digits: 2,
     symbol: r'ƒ',
   ),
-  CurrencyCode.AOA: const Currency._(
+  CurrencyCode.AOA: Currency._(
     name: 'Angolan Kwanza',
     code: CurrencyCode.AOA,
     number: 973,
     digits: 2,
     symbol: r'Kz',
   ),
-  CurrencyCode.ARS: const Currency._(
+  CurrencyCode.ARS: Currency._(
     name: 'Argentine Peso',
     code: CurrencyCode.ARS,
     number: 32,
     digits: 2,
     symbol: r'$',
   ),
-  CurrencyCode.AUD: const Currency._(
+  CurrencyCode.AUD: Currency._(
     name: 'Australian Dollar',
     code: CurrencyCode.AUD,
     number: 36,
     digits: 2,
     symbol: r'$',
   ),
-  CurrencyCode.AWG: const Currency._(
+  CurrencyCode.AWG: Currency._(
     name: 'Aruba Guilder',
     code: CurrencyCode.AWG,
     number: 533,
     digits: 2,
     symbol: r'ƒ',
   ),
-  CurrencyCode.AZN: const Currency._(
+  CurrencyCode.AZN: Currency._(
     name: 'Azerbaijan Manat',
     code: CurrencyCode.AZN,
     number: 944,
     digits: 2,
     symbol: r'₼',
   ),
-  CurrencyCode.BAM: const Currency._(
+  CurrencyCode.BAM: Currency._(
     name: 'Bosnian Convertible Marka',
     code: CurrencyCode.BAM,
     number: 977,
     digits: 2,
     symbol: r'KM',
   ),
-  CurrencyCode.BBD: const Currency._(
+  CurrencyCode.BBD: Currency._(
     name: 'Barbadian Dollar',
     code: CurrencyCode.BBD,
     number: 52,
     digits: 2,
     symbol: r'$',
   ),
-  CurrencyCode.BDT: const Currency._(
+  CurrencyCode.BDT: Currency._(
     name: 'Bangladeshi Taka',
     code: CurrencyCode.BDT,
     number: 50,
     digits: 2,
     symbol: r'৳',
   ),
-  CurrencyCode.BGN: const Currency._(
+  CurrencyCode.BGN: Currency._(
     name: 'Bulgarian Lev',
     code: CurrencyCode.BGN,
     number: 975,
     digits: 2,
     symbol: r'лв.',
   ),
-  CurrencyCode.BIF: const Currency._(
+  CurrencyCode.BIF: Currency._(
     name: 'Burundian Franc',
     code: CurrencyCode.BIF,
     number: 108,
     digits: 0,
     symbol: r'Fr',
   ),
-  CurrencyCode.BMD: const Currency._(
+  CurrencyCode.BMD: Currency._(
     name: 'Bermudian Dollar',
     code: CurrencyCode.BMD,
     number: 60,
     digits: 2,
     symbol: r'$',
   ),
-  CurrencyCode.BND: const Currency._(
+  CurrencyCode.BND: Currency._(
     name: 'Brunei Dollar',
     code: CurrencyCode.BND,
     number: 96,
     digits: 2,
     symbol: r'$',
   ),
-  CurrencyCode.BOB: const Currency._(
+  CurrencyCode.BOB: Currency._(
     name: 'Bolivian Boliviano',
     code: CurrencyCode.BOB,
     number: 68,
     digits: 2,
     symbol: r'$b',
   ),
-  CurrencyCode.BRL: const Currency._(
+  CurrencyCode.BRL: Currency._(
     name: 'Brazilian Real',
     code: CurrencyCode.BRL,
     number: 986,
     digits: 2,
     symbol: r'R$',
   ),
-  CurrencyCode.BSD: const Currency._(
+  CurrencyCode.BSD: Currency._(
     name: 'Bahamian Dollar',
     code: CurrencyCode.BSD,
     number: 44,
     digits: 2,
     symbol: r'B$',
   ),
-  CurrencyCode.BWP: const Currency._(
+  CurrencyCode.BWP: Currency._(
     name: 'Botswana Pula',
     code: CurrencyCode.BWP,
     number: 72,
     digits: 2,
     symbol: r'P',
   ),
-  CurrencyCode.BZD: const Currency._(
+  CurrencyCode.BZD: Currency._(
     name: 'Belize Dollar',
     code: CurrencyCode.BZD,
     number: 84,
     digits: 2,
     symbol: r'$',
   ),
-  CurrencyCode.CAD: const Currency._(
+  CurrencyCode.CAD: Currency._(
     name: 'Canadian Dollar',
     code: CurrencyCode.CAD,
     number: 124,
     digits: 2,
     symbol: r'$',
   ),
-  CurrencyCode.CDF: const Currency._(
+  CurrencyCode.CDF: Currency._(
     name: 'Congolese franc',
     code: CurrencyCode.CDF,
     number: 976,
     digits: 2,
     symbol: r'Fr',
   ),
-  CurrencyCode.CHF: const Currency._(
+  CurrencyCode.CHF: Currency._(
     name: 'Swiss Franc',
     code: CurrencyCode.CHF,
     number: 756,
     digits: 2,
     symbol: r'CHF',
   ),
-  CurrencyCode.CLP: const Currency._(
+  CurrencyCode.CLP: Currency._(
     name: 'Chilean Peso',
     code: CurrencyCode.CLP,
     number: 152,
     digits: 0,
     symbol: r'$',
   ),
-  CurrencyCode.CNY: const Currency._(
+  CurrencyCode.CNY: Currency._(
     name: 'Chinese Yuan',
     code: CurrencyCode.CNY,
     number: 156,
     digits: 2,
     symbol: r'¥',
   ),
-  CurrencyCode.COP: const Currency._(
+  CurrencyCode.COP: Currency._(
     name: 'Colombian Peso',
     code: CurrencyCode.COP,
     number: 170,
     digits: 2,
     symbol: r'$',
   ),
-  CurrencyCode.CRC: const Currency._(
+  CurrencyCode.CRC: Currency._(
     name: 'Costa Rican Colón',
     code: CurrencyCode.CRC,
     number: 188,
     digits: 2,
     symbol: r'₡',
   ),
-  CurrencyCode.CVE: const Currency._(
+  CurrencyCode.CVE: Currency._(
     name: 'Cape Verdean Escudo',
     code: CurrencyCode.CVE,
     number: 132,
     digits: 2,
     symbol: r'Esc',
   ),
-  CurrencyCode.CZK: const Currency._(
+  CurrencyCode.CZK: Currency._(
     name: 'Czech Koruna',
     code: CurrencyCode.CZK,
     number: 203,
     digits: 2,
     symbol: r'Kč',
   ),
-  CurrencyCode.DJF: const Currency._(
+  CurrencyCode.DJF: Currency._(
     name: 'Djiboutian Franc',
     code: CurrencyCode.DJF,
     number: 262,
     digits: 0,
     symbol: r'Fdj',
   ),
-  CurrencyCode.DKK: const Currency._(
+  CurrencyCode.DKK: Currency._(
     name: 'Danish Krone',
     code: CurrencyCode.DKK,
     number: 208,
     digits: 2,
     symbol: r'kr',
   ),
-  CurrencyCode.DOP: const Currency._(
+  CurrencyCode.DOP: Currency._(
     name: 'Dominican Peso',
     code: CurrencyCode.DOP,
     number: 214,
     digits: 2,
     symbol: r'RD$',
   ),
-  CurrencyCode.DZD: const Currency._(
+  CurrencyCode.DZD: Currency._(
     name: 'Algerian Dinar',
     code: CurrencyCode.DZD,
     number: 12,
     digits: 2,
     symbol: r'د.ج',
   ),
-  CurrencyCode.EGP: const Currency._(
+  CurrencyCode.EGP: Currency._(
     name: 'Egyptian Pound',
     code: CurrencyCode.EGP,
     number: 818,
     digits: 2,
     symbol: r'ج.م',
   ),
-  CurrencyCode.ETB: const Currency._(
+  CurrencyCode.ETB: Currency._(
     name: 'Ethiopian Birr',
     code: CurrencyCode.ETB,
     number: 230,
     digits: 2,
     symbol: r'ብር',
   ),
-  CurrencyCode.EUR: const Currency._(
+  CurrencyCode.EUR: Currency._(
     name: 'Euro',
     code: CurrencyCode.EUR,
     number: 978,
     digits: 2,
     symbol: r'€',
   ),
-  CurrencyCode.FJD: const Currency._(
+  CurrencyCode.FJD: Currency._(
     name: 'Fijian Dollar',
     code: CurrencyCode.FJD,
     number: 242,
     digits: 2,
     symbol: r'$',
   ),
-  CurrencyCode.FKP: const Currency._(
+  CurrencyCode.FKP: Currency._(
     name: 'Falkland Islands Pound',
     code: CurrencyCode.FKP,
     number: 238,
     digits: 2,
     symbol: r'FK£',
   ),
-  CurrencyCode.GBP: const Currency._(
+  CurrencyCode.GBP: Currency._(
     name: 'British Pound',
     code: CurrencyCode.GBP,
     number: 826,
     digits: 2,
     symbol: r'£',
   ),
-  CurrencyCode.GEL: const Currency._(
+  CurrencyCode.GEL: Currency._(
     name: 'Georgian Lari',
     code: CurrencyCode.GEL,
     number: 981,
     digits: 2,
     symbol: r'ლ',
   ),
-  CurrencyCode.GIP: const Currency._(
+  CurrencyCode.GIP: Currency._(
     name: 'Gibraltar Pound',
     code: CurrencyCode.GIP,
     number: 292,
     digits: 2,
     symbol: r'£',
   ),
-  CurrencyCode.GMD: const Currency._(
+  CurrencyCode.GMD: Currency._(
     name: 'Gambian Dalasi',
     code: CurrencyCode.GMD,
     number: 270,
     digits: 2,
     symbol: r'D',
   ),
-  CurrencyCode.GNF: const Currency._(
+  CurrencyCode.GNF: Currency._(
     name: 'Guinean Franc',
     code: CurrencyCode.GNF,
     number: 324,
     digits: 0,
     symbol: r'Fr',
   ),
-  CurrencyCode.GTQ: const Currency._(
+  CurrencyCode.GTQ: Currency._(
     name: 'Guatemalan Quetzal',
     code: CurrencyCode.GTQ,
     number: 320,
     digits: 2,
     symbol: r'Q',
   ),
-  CurrencyCode.GYD: const Currency._(
+  CurrencyCode.GYD: Currency._(
     name: 'Guyanese Dollar',
     code: CurrencyCode.GYD,
     number: 328,
     digits: 2,
     symbol: r'$',
   ),
-  CurrencyCode.HKD: const Currency._(
+  CurrencyCode.HKD: Currency._(
     name: 'Hong Kong Dollar',
     code: CurrencyCode.HKD,
     number: 344,
     digits: 2,
     symbol: r'$',
   ),
-  CurrencyCode.HNL: const Currency._(
+  CurrencyCode.HNL: Currency._(
     name: 'Honduran Lempira',
     code: CurrencyCode.HNL,
     number: 340,
     digits: 2,
     symbol: r'L',
   ),
-  CurrencyCode.HRK: const Currency._(
+  CurrencyCode.HRK: Currency._(
     name: 'Croatian Kuna',
     code: CurrencyCode.HRK,
     number: 191,
     digits: 2,
     symbol: r'kn',
   ),
-  CurrencyCode.HTG: const Currency._(
+  CurrencyCode.HTG: Currency._(
     name: 'Haitian Gourde',
     code: CurrencyCode.HTG,
     number: 332,
     digits: 2,
     symbol: r'G',
   ),
-  CurrencyCode.HUF: const Currency._(
+  CurrencyCode.HUF: Currency._(
     name: 'Hungarian Forint',
     code: CurrencyCode.HUF,
     number: 348,
     digits: 2,
     symbol: r'Ft',
   ),
-  CurrencyCode.ILS: const Currency._(
+  CurrencyCode.ILS: Currency._(
     name: 'Israeli New Shekel',
     code: CurrencyCode.ILS,
     number: 376,
     digits: 2,
     symbol: r'₪',
   ),
-  CurrencyCode.INR: const Currency._(
+  CurrencyCode.INR: Currency._(
     name: 'Indian Rupee',
     code: CurrencyCode.INR,
     number: 356,
     digits: 2,
     symbol: r'₹',
   ),
-  CurrencyCode.ISK: const Currency._(
+  CurrencyCode.ISK: Currency._(
     name: 'Icelandic Krona',
     code: CurrencyCode.ISK,
     number: 352,
     digits: 0,
     symbol: r'ISK',
   ),
-  CurrencyCode.JMD: const Currency._(
+  CurrencyCode.JMD: Currency._(
     name: 'Jamaican Dollar',
     code: CurrencyCode.JMD,
     number: 388,
     digits: 2,
     symbol: r'$',
   ),
-  CurrencyCode.JPY: const Currency._(
+  CurrencyCode.JPY: Currency._(
     name: 'Japanese Yen',
     code: CurrencyCode.JPY,
     number: 392,
     digits: 0,
     symbol: r'¥',
   ),
-  CurrencyCode.KES: const Currency._(
+  CurrencyCode.KES: Currency._(
     name: 'Kenyan Shilling',
     code: CurrencyCode.KES,
     number: 404,
     digits: 2,
     symbol: r'KSh',
   ),
-  CurrencyCode.KGS: const Currency._(
+  CurrencyCode.KGS: Currency._(
     name: 'Kyrgyzstani Som',
     code: CurrencyCode.KGS,
     number: 417,
     digits: 2,
     symbol: r'лв',
   ),
-  CurrencyCode.KHR: const Currency._(
+  CurrencyCode.KHR: Currency._(
     name: 'Cambodian Riel',
     code: CurrencyCode.KHR,
     number: 116,
     digits: 2,
     symbol: r'៛',
   ),
-  CurrencyCode.KMF: const Currency._(
+  CurrencyCode.KMF: Currency._(
     name: 'Comorian Franc',
     code: CurrencyCode.KMF,
     number: 174,
     digits: 0,
     symbol: r'Fr',
   ),
-  CurrencyCode.KRW: const Currency._(
+  CurrencyCode.KRW: Currency._(
     name: 'South Korean Won',
     code: CurrencyCode.KRW,
     number: 410,
     digits: 0,
     symbol: r'₩',
   ),
-  CurrencyCode.KYD: const Currency._(
+  CurrencyCode.KYD: Currency._(
     name: 'Cayman Islands Dollar',
     code: CurrencyCode.KYD,
     number: 136,
     digits: 2,
     symbol: r'$',
   ),
-  CurrencyCode.KZT: const Currency._(
+  CurrencyCode.KZT: Currency._(
     name: 'Kazakhstani Tenge',
     code: CurrencyCode.KZT,
     number: 398,
     digits: 2,
     symbol: r'₸',
   ),
-  CurrencyCode.LAK: const Currency._(
+  CurrencyCode.LAK: Currency._(
     name: 'Lao Kip',
     code: CurrencyCode.LAK,
     number: 418,
     digits: 2,
     symbol: r'₭',
   ),
-  CurrencyCode.LBP: const Currency._(
+  CurrencyCode.LBP: Currency._(
     name: 'Lebanese Pound',
     code: CurrencyCode.LBP,
     number: 422,
     digits: 2,
     symbol: r'LL',
   ),
-  CurrencyCode.LKR: const Currency._(
+  CurrencyCode.LKR: Currency._(
     name: 'Sri Lankan Rupee',
     code: CurrencyCode.LKR,
     number: 144,
     digits: 2,
     symbol: r'Rs',
   ),
-  CurrencyCode.LRD: const Currency._(
+  CurrencyCode.LRD: Currency._(
     name: 'Liberian Dollar',
     code: CurrencyCode.LRD,
     number: 430,
     digits: 2,
     symbol: r'$',
   ),
-  CurrencyCode.LSL: const Currency._(
+  CurrencyCode.LSL: Currency._(
     name: 'Lesotho loti',
     code: CurrencyCode.LSL,
     number: 426,
     digits: 2,
     symbol: r'L',
   ),
-  CurrencyCode.MAD: const Currency._(
+  CurrencyCode.MAD: Currency._(
     name: 'Moroccan Dirham',
     code: CurrencyCode.MAD,
     number: 504,
     digits: 2,
     symbol: r'DH',
   ),
-  CurrencyCode.MDL: const Currency._(
+  CurrencyCode.MDL: Currency._(
     name: 'Moldovan Leu',
     code: CurrencyCode.MDL,
     number: 498,
     digits: 2,
     symbol: r'MDL',
   ),
-  CurrencyCode.MGA: const Currency._(
+  CurrencyCode.MGA: Currency._(
     name: 'Malagasy Ariary',
     code: CurrencyCode.MGA,
     number: 969,
     digits: 2,
     symbol: r'Ar',
   ),
-  CurrencyCode.MKD: const Currency._(
+  CurrencyCode.MKD: Currency._(
     name: 'Macedonian Denar',
     code: CurrencyCode.MKD,
     number: 807,
     digits: 2,
     symbol: r'ден',
   ),
-  CurrencyCode.MMK: const Currency._(
+  CurrencyCode.MMK: Currency._(
     name: 'Myanmar Kyat',
     code: CurrencyCode.MMK,
     number: 104,
     digits: 2,
     symbol: r'K',
   ),
-  CurrencyCode.MNT: const Currency._(
+  CurrencyCode.MNT: Currency._(
     name: 'Mongolian Tughrik',
     code: CurrencyCode.MNT,
     number: 496,
     digits: 2,
     symbol: r'₮',
   ),
-  CurrencyCode.MOP: const Currency._(
+  CurrencyCode.MOP: Currency._(
     name: 'Macanese Pataca',
     code: CurrencyCode.MOP,
     number: 446,
     digits: 2,
     symbol: r'MOP',
   ),
-  CurrencyCode.MUR: const Currency._(
+  CurrencyCode.MUR: Currency._(
     name: 'Mauritian Rupee',
     code: CurrencyCode.MUR,
     number: 480,
     digits: 2,
     symbol: r'Ɍs',
   ),
-  CurrencyCode.MVR: const Currency._(
+  CurrencyCode.MVR: Currency._(
     name: 'Maldivian Rufiyaa',
     code: CurrencyCode.MVR,
     number: 462,
     digits: 2,
     symbol: r'Rf',
   ),
-  CurrencyCode.MWK: const Currency._(
+  CurrencyCode.MWK: Currency._(
     name: 'Malawian Kwacha',
     code: CurrencyCode.MWK,
     number: 454,
     digits: 2,
     symbol: r'MK',
   ),
-  CurrencyCode.MXN: const Currency._(
+  CurrencyCode.MXN: Currency._(
     name: 'Mexican Peso',
     code: CurrencyCode.MXN,
     number: 484,
     digits: 2,
     symbol: r'$',
   ),
-  CurrencyCode.MYR: const Currency._(
+  CurrencyCode.MYR: Currency._(
     name: 'Malaysian Ringgit',
     code: CurrencyCode.MYR,
     number: 458,
     digits: 2,
     symbol: r'RM',
   ),
-  CurrencyCode.MZN: const Currency._(
+  CurrencyCode.MZN: Currency._(
     name: 'Mozambican Metical',
     code: CurrencyCode.MZN,
     number: 943,
     digits: 2,
     symbol: r'MT',
   ),
-  CurrencyCode.NAD: const Currency._(
+  CurrencyCode.NAD: Currency._(
     name: 'Namibian Dollar',
     code: CurrencyCode.NAD,
     number: 516,
     digits: 2,
     symbol: r'$',
   ),
-  CurrencyCode.NGN: const Currency._(
+  CurrencyCode.NGN: Currency._(
     name: 'Nigerian Naira',
     code: CurrencyCode.NGN,
     number: 566,
     digits: 2,
     symbol: r'₦',
   ),
-  CurrencyCode.NIO: const Currency._(
+  CurrencyCode.NIO: Currency._(
     name: 'Nicaraguan Córdoba',
     code: CurrencyCode.NIO,
     number: 558,
     digits: 2,
     symbol: r'C$',
   ),
-  CurrencyCode.NOK: const Currency._(
+  CurrencyCode.NOK: Currency._(
     name: 'Norwegian Krone',
     code: CurrencyCode.NOK,
     number: 578,
     digits: 2,
     symbol: r'kr',
   ),
-  CurrencyCode.NPR: const Currency._(
+  CurrencyCode.NPR: Currency._(
     name: 'Nepalese Rupee',
     code: CurrencyCode.NPR,
     number: 524,
     digits: 2,
     symbol: r'रु',
   ),
-  CurrencyCode.NZD: const Currency._(
+  CurrencyCode.NZD: Currency._(
     name: 'New Zealand Dollar',
     code: CurrencyCode.NZD,
     number: 554,
     digits: 2,
     symbol: r'$',
   ),
-  CurrencyCode.PAB: const Currency._(
+  CurrencyCode.PAB: Currency._(
     name: 'Panamanian Balboa',
     code: CurrencyCode.PAB,
     number: 590,
     digits: 2,
     symbol: r'B/.',
   ),
-  CurrencyCode.PEN: const Currency._(
+  CurrencyCode.PEN: Currency._(
     name: 'Peruvian Sol',
     code: CurrencyCode.PEN,
     number: 604,
     digits: 2,
     symbol: r'S/.',
   ),
-  CurrencyCode.PGK: const Currency._(
+  CurrencyCode.PGK: Currency._(
     name: 'Papua New Guinean Kina',
     code: CurrencyCode.PGK,
     number: 598,
     digits: 2,
     symbol: r'K',
   ),
-  CurrencyCode.PHP: const Currency._(
+  CurrencyCode.PHP: Currency._(
     name: 'Philippine Peso',
     code: CurrencyCode.PHP,
     number: 608,
     digits: 2,
     symbol: r'₱',
   ),
-  CurrencyCode.PKR: const Currency._(
+  CurrencyCode.PKR: Currency._(
     name: 'Pakistani Rupee',
     code: CurrencyCode.PKR,
     number: 586,
     digits: 2,
     symbol: r'Rs',
   ),
-  CurrencyCode.PLN: const Currency._(
+  CurrencyCode.PLN: Currency._(
     name: 'Polish Zloty',
     code: CurrencyCode.PLN,
     number: 985,
     digits: 2,
     symbol: r'zł',
   ),
-  CurrencyCode.PYG: const Currency._(
+  CurrencyCode.PYG: Currency._(
     name: 'Paraguayan Guarani',
     code: CurrencyCode.PYG,
     number: 600,
     digits: 0,
     symbol: r'₲',
   ),
-  CurrencyCode.QAR: const Currency._(
+  CurrencyCode.QAR: Currency._(
     name: 'Qatari Riyal',
     code: CurrencyCode.QAR,
     number: 634,
     digits: 2,
     symbol: r'ر.ق',
   ),
-  CurrencyCode.RON: const Currency._(
+  CurrencyCode.RON: Currency._(
     name: 'Romanian Leu',
     code: CurrencyCode.RON,
     number: 946,
     digits: 2,
     symbol: r'lei',
   ),
-  CurrencyCode.RSD: const Currency._(
+  CurrencyCode.RSD: Currency._(
     name: 'Serbian Diner',
     code: CurrencyCode.RSD,
     number: 941,
     digits: 2,
     symbol: r'Дин',
   ),
-  CurrencyCode.RUB: const Currency._(
+  CurrencyCode.RUB: Currency._(
     name: 'Russian Rubel',
     code: CurrencyCode.RUB,
     number: 643,
     digits: 2,
     symbol: r'руб',
   ),
-  CurrencyCode.RWF: const Currency._(
+  CurrencyCode.RWF: Currency._(
     name: 'Rwandan Franc',
     code: CurrencyCode.RWF,
     number: 646,
     digits: 0,
     symbol: r'FRw',
   ),
-  CurrencyCode.SAR: const Currency._(
+  CurrencyCode.SAR: Currency._(
     name: 'Saudi Arabian Riyal',
     code: CurrencyCode.SAR,
     number: 682,
     digits: 2,
     symbol: r'ر.س',
   ),
-  CurrencyCode.SBD: const Currency._(
+  CurrencyCode.SBD: Currency._(
     name: 'Solomon Islands Dollar',
     code: CurrencyCode.SBD,
     number: 90,
     digits: 2,
     symbol: r'$',
   ),
-  CurrencyCode.SCR: const Currency._(
+  CurrencyCode.SCR: Currency._(
     name: 'Seychellois Rupee',
     code: CurrencyCode.SCR,
     number: 690,
     digits: 2,
     symbol: r'Ɍs',
   ),
-  CurrencyCode.SEK: const Currency._(
+  CurrencyCode.SEK: Currency._(
     name: 'Swedish Krona',
     code: CurrencyCode.SEK,
     number: 752,
     digits: 2,
     symbol: r'kr',
   ),
-  CurrencyCode.SGD: const Currency._(
+  CurrencyCode.SGD: Currency._(
     name: 'Singapore Dollar',
     code: CurrencyCode.SGD,
     number: 702,
     digits: 2,
     symbol: r'$',
   ),
-  CurrencyCode.SLL: const Currency._(
+  CurrencyCode.SLL: Currency._(
     name: 'Sierra Leonean Leone',
     code: CurrencyCode.SLL,
     number: 694,
     digits: 2,
     symbol: r'Le',
   ),
-  CurrencyCode.SOS: const Currency._(
+  CurrencyCode.SOS: Currency._(
     name: 'Somali Shilling',
     code: CurrencyCode.SOS,
     number: 706,
     digits: 2,
     symbol: r'SOS',
   ),
-  CurrencyCode.SRD: const Currency._(
+  CurrencyCode.SRD: Currency._(
     name: 'Surinamese Dollar',
     code: CurrencyCode.SRD,
     number: 968,
     digits: 2,
     symbol: r'$',
   ),
-  CurrencyCode.SVC: const Currency._(
+  CurrencyCode.SVC: Currency._(
     name: 'Salvadoran Colón',
     code: CurrencyCode.SVC,
     number: 222,
     digits: 2,
     symbol: r'SVC',
   ),
-  CurrencyCode.SZL: const Currency._(
+  CurrencyCode.SZL: Currency._(
     name: 'Swazi Lilangeni',
     code: CurrencyCode.SZL,
     number: 748,
     digits: 2,
     symbol: r'SZL',
   ),
-  CurrencyCode.THB: const Currency._(
+  CurrencyCode.THB: Currency._(
     name: 'Thai Baht',
     code: CurrencyCode.THB,
     number: 764,
     digits: 2,
     symbol: r'฿',
   ),
-  CurrencyCode.TJS: const Currency._(
+  CurrencyCode.TJS: Currency._(
     name: 'Tajikistani Somoni',
     code: CurrencyCode.TJS,
     number: 972,
     digits: 2,
     symbol: r'TJS',
   ),
-  CurrencyCode.TOP: const Currency._(
+  CurrencyCode.TOP: Currency._(
     name: 'Tongan Paanga',
     code: CurrencyCode.TOP,
     number: 776,
     digits: 2,
     symbol: r'T$',
   ),
-  CurrencyCode.TRY: const Currency._(
+  CurrencyCode.TRY: Currency._(
     name: 'Turkish Lira',
     code: CurrencyCode.TRY,
     number: 949,
     digits: 2,
     symbol: r'TL',
   ),
-  CurrencyCode.TTD: const Currency._(
+  CurrencyCode.TTD: Currency._(
     name: 'Trinidad and Tobago Dollar',
     code: CurrencyCode.TTD,
     number: 780,
     digits: 2,
     symbol: r'$',
   ),
-  CurrencyCode.TWD: const Currency._(
+  CurrencyCode.TWD: Currency._(
     name: 'Taiwan New Dollar',
     code: CurrencyCode.TWD,
     number: 901,
     digits: 2,
     symbol: r'$',
   ),
-  CurrencyCode.TZS: const Currency._(
+  CurrencyCode.TZS: Currency._(
     name: 'Tanzanian Shilling',
     code: CurrencyCode.TZS,
     number: 834,
     digits: 2,
     symbol: r'TSh',
   ),
-  CurrencyCode.UAH: const Currency._(
+  CurrencyCode.UAH: Currency._(
     name: 'Ukrainian Hryvnia',
     code: CurrencyCode.UAH,
     number: 980,
     digits: 2,
     symbol: r'₴',
   ),
-  CurrencyCode.UGX: const Currency._(
+  CurrencyCode.UGX: Currency._(
     name: 'Ugandan Shilling',
     code: CurrencyCode.UGX,
     number: 800,
     digits: 0,
     symbol: r'USh',
   ),
-  CurrencyCode.USD: const Currency._(
+  CurrencyCode.USD: Currency._(
     name: 'US Dollar',
     code: CurrencyCode.USD,
     number: 840,
     digits: 2,
     symbol: r'$',
   ),
-  CurrencyCode.UYU: const Currency._(
+  CurrencyCode.UYU: Currency._(
     name: 'Uruguayan Peso',
     code: CurrencyCode.UYU,
     number: 858,
     digits: 2,
     symbol: r'$',
   ),
-  CurrencyCode.UZS: const Currency._(
+  CurrencyCode.UZS: Currency._(
     name: 'Uzbekistani Som',
     code: CurrencyCode.UZS,
     number: 860,
     digits: 2,
     symbol: r'лв',
   ),
-  CurrencyCode.VND: const Currency._(
+  CurrencyCode.VND: Currency._(
     name: 'Vietnamese Đồng',
     code: CurrencyCode.VND,
     number: 704,
     digits: 0,
     symbol: r'₫',
   ),
-  CurrencyCode.VUV: const Currency._(
+  CurrencyCode.VUV: Currency._(
     name: 'Vanuatu vatu',
     code: CurrencyCode.VUV,
     number: 548,
     digits: 0,
     symbol: r'VT',
   ),
-  CurrencyCode.WST: const Currency._(
+  CurrencyCode.WST: Currency._(
     name: 'Samoan Tala',
     code: CurrencyCode.WST,
     number: 882,
     digits: 2,
     symbol: r'WST',
   ),
-  CurrencyCode.XAF: const Currency._(
+  CurrencyCode.XAF: Currency._(
     name: 'Central African Franc',
     code: CurrencyCode.XAF,
     number: 950,
     digits: 0,
     symbol: r'Fr',
   ),
-  CurrencyCode.XCD: const Currency._(
+  CurrencyCode.XCD: Currency._(
     name: 'East Caribbean Dollar',
     code: CurrencyCode.XCD,
     number: 951,
     digits: 2,
     symbol: r'$',
   ),
-  CurrencyCode.XOF: const Currency._(
+  CurrencyCode.XOF: Currency._(
     name: 'West African Franc',
     code: CurrencyCode.XOF,
     number: 952,
     digits: 0,
     symbol: r'XOF',
   ),
-  CurrencyCode.XPF: const Currency._(
+  CurrencyCode.XPF: Currency._(
     name: 'CFP Franc',
     code: CurrencyCode.XPF,
     number: 953,
     digits: 0,
     symbol: r'Fr',
   ),
-  CurrencyCode.YER: const Currency._(
+  CurrencyCode.YER: Currency._(
     name: 'Yemeni Rial',
     code: CurrencyCode.YER,
     number: 886,
     digits: 2,
     symbol: r'﷼',
   ),
-  CurrencyCode.ZAR: const Currency._(
+  CurrencyCode.ZAR: Currency._(
     name: 'South African Rand',
     code: CurrencyCode.ZAR,
     number: 710,
     digits: 2,
     symbol: r'R',
   ),
-  CurrencyCode.ZMW: const Currency._(
+  CurrencyCode.ZMW: Currency._(
     name: 'Zambian Kwacha',
     code: CurrencyCode.ZMW,
     number: 967,
     digits: 2,
     symbol: r'ZMW',
   ),
-  CurrencyCode.BHD: const Currency._(
+  CurrencyCode.BHD: Currency._(
     name: 'Bahraini Dinar',
     code: CurrencyCode.BHD,
     number: 48,
     digits: 3,
     symbol: r'.د.ب',
   ),
-  CurrencyCode.BTN: const Currency._(
+  CurrencyCode.BTN: Currency._(
     name: 'Ngultrum',
     code: CurrencyCode.BTN,
     number: 64,
     digits: 2,
     symbol: r'Nu.',
   ),
-  CurrencyCode.CUP: const Currency._(
+  CurrencyCode.CUP: Currency._(
     name: 'Cuban Peso',
     code: CurrencyCode.CUP,
     number: 192,
     digits: 2,
     symbol: r'$MN',
   ),
-  CurrencyCode.ERN: const Currency._(
+  CurrencyCode.ERN: Currency._(
     name: 'Nakfa',
     code: CurrencyCode.ERN,
     number: 232,
     digits: 2,
     symbol: r'Nkf',
   ),
-  CurrencyCode.IDR: const Currency._(
+  CurrencyCode.IDR: Currency._(
     name: 'Rupiah',
     code: CurrencyCode.IDR,
     number: 360,
     digits: 2,
     symbol: r'Rp',
   ),
-  CurrencyCode.IRR: const Currency._(
+  CurrencyCode.IRR: Currency._(
     name: 'Iranian Rial',
     code: CurrencyCode.IRR,
     number: 364,
     digits: 2,
     symbol: r'﷼',
   ),
-  CurrencyCode.IQD: const Currency._(
+  CurrencyCode.IQD: Currency._(
     name: 'Iraqi Dinar',
     code: CurrencyCode.IQD,
     number: 368,
     digits: 3,
     symbol: r'د.ع',
   ),
-  CurrencyCode.JOD: const Currency._(
+  CurrencyCode.JOD: Currency._(
     name: 'Jordanian Dinar',
     code: CurrencyCode.JOD,
     number: 400,
     digits: 3,
     symbol: r'د.أ',
   ),
-  CurrencyCode.KPW: const Currency._(
+  CurrencyCode.KPW: Currency._(
     name: 'North Korean Won',
     code: CurrencyCode.KPW,
     number: 408,
     digits: 2,
     symbol: r'₩',
   ),
-  CurrencyCode.KWD: const Currency._(
+  CurrencyCode.KWD: Currency._(
     name: 'Kuwaiti Dinar',
     code: CurrencyCode.KWD,
     number: 414,
     digits: 3,
     symbol: r'د.ك',
   ),
-  CurrencyCode.LYD: const Currency._(
+  CurrencyCode.LYD: Currency._(
     name: 'Libyan Dinar',
     code: CurrencyCode.LYD,
     number: 434,
     digits: 3,
     symbol: r'ل.د',
   ),
-  CurrencyCode.OMR: const Currency._(
+  CurrencyCode.OMR: Currency._(
     name: 'Rial Omani',
     code: CurrencyCode.OMR,
     number: 512,
     digits: 3,
     symbol: r'ر.ع.',
   ),
-  CurrencyCode.SHP: const Currency._(
+  CurrencyCode.SHP: Currency._(
     name: 'Saint Helena Pound',
     code: CurrencyCode.SHP,
     number: 654,
     digits: 2,
     symbol: r'£',
   ),
-  CurrencyCode.SSP: const Currency._(
+  CurrencyCode.SSP: Currency._(
     name: 'South Sudanese Pound',
     code: CurrencyCode.SSP,
     number: 728,
     digits: 2,
     symbol: r'SS£',
   ),
-  CurrencyCode.SYP: const Currency._(
+  CurrencyCode.SYP: Currency._(
     name: 'Syrian Pound',
     code: CurrencyCode.SYP,
     number: 760,
     digits: 2,
     symbol: r'£S',
   ),
-  CurrencyCode.TND: const Currency._(
+  CurrencyCode.TND: Currency._(
     name: 'Tunisian Dinar',
     code: CurrencyCode.TND,
     number: 788,
     digits: 3,
     symbol: r'د.ت',
   ),
-  CurrencyCode.VES: const Currency._(
+  CurrencyCode.VES: Currency._(
     name: 'Bolívar Soberano',
     code: CurrencyCode.VES,
     number: 928,
     digits: 2,
     symbol: r'Bs.',
   ),
-  CurrencyCode.MRU: const Currency._(
+  CurrencyCode.MRU: Currency._(
     name: 'Ouguiya',
     code: CurrencyCode.MRU,
     number: 929,
     digits: 2,
     symbol: r'UM',
   ),
-  CurrencyCode.STN: const Currency._(
+  CurrencyCode.STN: Currency._(
     name: 'Dobra',
     code: CurrencyCode.STN,
     number: 930,
     digits: 2,
     symbol: r'Db',
   ),
-  CurrencyCode.CUC: const Currency._(
+  CurrencyCode.CUC: Currency._(
     name: 'Peso Convertible',
     code: CurrencyCode.CUC,
     number: 931,
     digits: 2,
     symbol: r'CUC$',
   ),
-  CurrencyCode.ZWL: const Currency._(
+  CurrencyCode.ZWL: Currency._(
     name: 'Zimbabwe Dollar',
     code: CurrencyCode.ZWL,
     number: 932,
     digits: 2,
     symbol: r'$',
   ),
-  CurrencyCode.BYN: const Currency._(
+  CurrencyCode.BYN: Currency._(
     name: 'Belarusian Ruble',
     code: CurrencyCode.BYN,
     number: 933,
     digits: 2,
     symbol: r'Br',
   ),
-  CurrencyCode.TMT: const Currency._(
+  CurrencyCode.TMT: Currency._(
     name: 'Turkmenistan New Manat',
     code: CurrencyCode.TMT,
     number: 934,
     digits: 2,
     symbol: r'm',
   ),
-  CurrencyCode.GHS: const Currency._(
+  CurrencyCode.GHS: Currency._(
     name: 'Ghana Cedi',
     code: CurrencyCode.GHS,
     number: 936,
     digits: 2,
     symbol: r'GH₵',
   ),
-  CurrencyCode.SDG: const Currency._(
+  CurrencyCode.SDG: Currency._(
     name: 'Sudanese Pound',
     code: CurrencyCode.SDG,
     number: 938,
