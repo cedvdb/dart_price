@@ -102,11 +102,11 @@ class Price implements Comparable<Price> {
     return Price._(amount - other.amount, currency);
   }
 
-  Price operator *(double scalor) {
+  Price operator *(num scalor) {
     return Price._(amount * Decimal.parse(scalor.toString()), currency);
   }
 
-  Price operator /(double scalor) {
+  Price operator /(num scalor) {
     final result = amount / Decimal.parse(scalor.toString());
     return Price._(result.toDecimal(), currency);
   }

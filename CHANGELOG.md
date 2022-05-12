@@ -1,3 +1,7 @@
+## 0.0.3
+
+- allow scalor to be int too 
+
 ## 0.0.2
 
 - made currency map const
